@@ -1,67 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>simon say</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body{
-                background-color: rgb(23, 8, 8);
-            }
-            .head{
-                text-align: center;
-                color: crimson;
-            }
-            .parent{
-                margin-left: 500px;
-                margin-top: 15px;
-            }
-            .same{
-                height: 160px;
-                margin: 20px;
-                width: 140px;
-                border: 8px solid rgb(155, 235, 155);
-                border-radius: 20px;
-                text-align: center;
-                padding-top: 5px;
-            }
-            .parent{
-                display:flex;
-            }
-            #one{
-                background-color:#51abcb ;
-            }
-            #two{
-                background-color:#d1dd28 ;
-            }
-            #three{
-                background-color:#94ce7d ;
-            }
-            #four{
-                background-color:#c3585d ;
-            }
-            .level{
-                text-align: center;
-                color:lightseagreen
-            }
-            #flash{
-                background-color:white;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <h1 class="head">Simon Game</h1>
-    <h2 class="level">Press any block to satrt the game</h2>
-   
+<head>
+    <title>Simon Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">Simon Game</h1>
+    <h2 class="level">Press any block to start the game</h2>
+    <h2 class="score">Best Score: <span id="best-score">0</span></h2>
+
     <div class="parent">
-        <div id="one" class="same">1</div>
-        <div id="two" class="same">2</div>
+        <div id="one" class="same"  data-id="1"></div>
+        <div id="two" class="same"  data-id="2"></div>
     </div>
     <div class="parent">
-        <div id="three" class="same">3</div>
-        <div id="four" class="same">4</div>
+        <div id="three" class="same"  data-id="3"></div>
+        <div id="four" class="same"  data-id="4"></div>
+
     </div>
-    <script src="simonSay.js"></script>
-    </body>
+
+    <button id="btn">Start</button>
+
+   <script src="script.js"></script>
+</body>
 </html>

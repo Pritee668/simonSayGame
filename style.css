@@ -1,0 +1,112 @@
+body {
+    background-image: url('simonSay.webp'); /* Adjust the path if necessary */
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.head {
+    text-align: center;
+    color: #ff04fb;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+.level, .score {
+    text-align: center;
+    color: #fbf9fb;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
+}
+.same {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+.same:active{
+    background-color: azure;
+    
+}
+.same:hover {
+   filter: brightness(1.2);
+}
+#one { 
+     transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+    background-color: #20f177;  
+ }   
+#two {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+    background-color:#f62710; 
+}   
+#three { 
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+    background-color:#c6a005;
+} 
+#four { 
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+    background-color:#128cde;
+
+}  
+.game-over {
+    color: red;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@media (max-width: 600px) {
+    .same {
+        height: 120px;
+        width: 120px;
+        font-size: 1.5em;
+        line-height: 120px;
+        margin: 5px;
+    }
+    .head {
+        font-size: 2em;
+    }
+    .level, .score {
+        font-size: 1.2em;
+    }
+}
+#btn{
+    background-color: #ff04fb;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    font-size: 25px;
+    margin-top: 30px;
+    box-shadow: 3px 5px 3px black;
+    transition: transform 2s;
+}
+#btn:active{
+    box-shadow: 2px 3px 2px black;
+    transform: translateY(3px);
+    
+}
